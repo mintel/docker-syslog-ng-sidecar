@@ -1,6 +1,7 @@
-FROM alpine:3.6
+FROM alpine:3.13
 
-MAINTAINER Arve Knudsen <arve.knudsen@gmail.com>
+ARG BUILD_DATE
+ARG VCS_REF
 
 RUN apk update && apk add --no-cache syslog-ng
 
